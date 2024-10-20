@@ -19,7 +19,7 @@ public class PrimitiveDataTypes {
 		
 		System.out.println("Üçgen alan: "+ ((ucgenYukseklik * ucgenTabanUzunlugu)/2));
 		
-		System.out.println("Dairenin alan "+ (Math.pow(yaricapDaire* Math.PI, 2)));
+		System.out.println("Dairenin alan "+ (Math.pow(yaricapDaire, 2)*Math.PI));
 		System.out.println("Daire çevre: "+ (2 * Math.PI * yaricapDaire));
 		
 		
