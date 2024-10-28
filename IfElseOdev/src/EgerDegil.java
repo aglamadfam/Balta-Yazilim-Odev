@@ -29,7 +29,7 @@ public class EgerDegil {
 		double toplamNot = vizeNotEtki + finalNotEtki;
 		
 		if(toplamNot > 75 && toplamNot <101) {
-			System.out.println(toplamNot + "ortalama ile geçti");
+			System.out.println(toplamNot + "ortalama ile gecti");
 		}else if(toplamNot<=75 && toplamNot >=0) {
 			System.out.println(toplamNot + "ortalama ile kaldi");
 		}else {
@@ -39,7 +39,7 @@ public class EgerDegil {
 		System.out.println("");
 
 		float toplam = 0;
-		System.out.println("Kaç sayı ile işlem yapmak istersiniz:");
+		System.out.println("Kac sayi ile islem yapmak istersiniz:");
 		int sayiSayisi = scann.nextInt();
 		scann.nextLine();
 		int cikarilacak = sayiSayisi--;
@@ -49,17 +49,21 @@ public class EgerDegil {
 			System.out.println(kacinci+ ". sayiyi gir");
 			String giris = scann.nextLine();
 			
-			if(kacinci!= 1) {
-			System.out.println("4 işlemden birini gir:");
-			String islem = scann.nextLine();
 			
 			if(giris.equals("escape")) {
 				System.out.println("kapatiliyor");
 				System.exit(0);
 			}else {
+			    
+			if(kacinci!= 1) {
+			System.out.println("4 islemden birini gir:");
+			String islem = scann.nextLine();
 				try {
 					girilecekSayi = Float.parseFloat(giris);
-					if(islem.equals("*")) {
+					if(islem.equals("escape")){
+			        	System.out.println("kapatiliyor");
+					    System.exit(0);
+					}else if(islem.equals("*")) {
 						System.out.println("islem:"+toplam+"*"+girilecekSayi);
 						toplam = toplam * girilecekSayi;
 						System.out.println("sonuc:"+toplam);
@@ -88,7 +92,7 @@ public class EgerDegil {
 			
 			}
 			}
-			else if(kacinci == 1) {
+			 if(kacinci == 1) {
 				if(giris.equals("escape")) {
 					System.out.println("kapatiliyor");
 					System.exit(0);
@@ -124,27 +128,27 @@ public class EgerDegil {
 		
 		System.out.println("");
 		System.out.println("senaryo");
-		System.out.println("beyaz masa çağrı merkezine hoşgeldiniz");
-		System.out.println("istanbulkart için 1'i | kredi kartı için 2'yi");
-		System.out.println("bardak için 3'ü       | bardak altlığı için 4'ü");
-		System.out.println("matematik için 5'i    | türkçe için 6'yı");
-		System.out.println("for english press 7   | Ziffer 8 für Deutsch");
-		System.out.println("diall 9 pour le français");
+		System.out.println("beyaz masa cagri merkezine hosgeldiniz");
+		System.out.println("istanbulkart icin 1'i | kredi karti icin 2'yi");
+		System.out.println("bardak icin 3'u     | bardak altligi icin 4'u");
+		System.out.println("matematik icin 5'i    | turkce icin 6'yi");
+		System.out.println("for english press 7   | Ziffer 8 fur Deutsch");
+		System.out.println("diall 9 pour le francais");
 		System.out.println(" ");
 		int tuslananNum = scann.nextInt();
 		
 		if(tuslananNum == 1) {
-			System.out.println("istanbulkart çağrı merkezine hoşgeldiniz hemen operatörü balıyom");
+			System.out.println("istanbulkart cagri merkezine hosgeldiniz hemen operatoru baliyom");
 		}else if(tuslananNum ==2) {
-			System.out.println("kredi kartınızı ben ne yapayım");
+			System.out.println("kredi kartinizi ben ne yapayim");
 		}else if(tuslananNum ==3) {
 			System.out.println("bardak bardak bardak kahve");
 		}else if(tuslananNum ==4) {
-			System.out.println("bardak altlığı şuan stokta bulunmamaktadır");
+			System.out.println("bardak altligi suan stokta bulunmamaktadir");
 		}else if(tuslananNum ==5) {
 			System.out.println("2*2 = ceza");
 		}else if(tuslananNum==6) {
-			System.out.println("türkçe = türkiye = türkçe");
+			System.out.println("turkce = turkiye = turkce");
 		}else if(tuslananNum==7) {
 			System.out.println("and perhaps who is you");
 		}else if(tuslananNum==8) {
@@ -159,5 +163,4 @@ public class EgerDegil {
 		}
 		
 	}
-
 
